@@ -20,7 +20,6 @@ public class DbTranController {
 	DbTranService dbTranService;
 
 	@CrossOrigin
-//    @GetMapping("/users/db_select")
 	@PostMapping("/users/db_select")
     public  DbSelectResponse select(@RequestBody DbtestRequest dbtestRequest) throws Exception {
 
@@ -37,6 +36,7 @@ public class DbTranController {
     public DbtestResponse insert(@RequestBody DbtestRequest dbtestRequest) throws Exception {
 
     	System.out.println("controller");
+    	System.out.println(dbtestRequest);
     	DbtestResponse dbtestResponse = dbTranService.insert(dbtestRequest);
 
         return dbtestResponse;

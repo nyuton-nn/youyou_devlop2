@@ -38,9 +38,6 @@ public class DbTranService {
 		System.out.println(dbtestRequest.getTest());
 		
 		List<asynctest.dto.DbtestRequest.Datalist> inpustList = dbtestRequest.getDatalist();
-		for(asynctest.dto.DbtestRequest.Datalist input: inpustList) {
-			System.out.println(input.getID());
-		}
 		
 		DbtestResponse dbtestResponse = new DbtestResponse();
 		
